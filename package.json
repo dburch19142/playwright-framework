@@ -1,0 +1,21 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "typecheck": "tsc --noEmit",
+    "demo-app": "node demo-app/server.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "dotenv": "^18.0.5",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
